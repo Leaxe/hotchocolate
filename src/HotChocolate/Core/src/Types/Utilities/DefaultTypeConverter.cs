@@ -24,6 +24,7 @@ public partial class DefaultTypeConverter : ITypeConverter
 
         _changeTypeProvider.Add(new EnumTypeConverter());
         _changeTypeProvider.Add(new ListTypeConverter());
+        _changeTypeProvider.Add(new FSharpListTypeConverter());
         _changeTypeProvider.Add(new NullableTypeConverter());
     }
 
